@@ -13,7 +13,7 @@ build-image:
 
 .PHONY: run
 run:
-	docker run -it -p ${HOSTPORT}:8000 \
+	docker run -d -p ${HOSTPORT}:8000 \
 		-e "GIT_REPO_SSH_KEY=`cat ./git_repo_key/id_rsa`" \
 		-e "GIT_REPO=${GIT_REPO}" \
 		-e "HTML_DIRECTORY=${HTML_DIRECTORY}" \
