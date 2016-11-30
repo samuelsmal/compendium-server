@@ -4,7 +4,7 @@ MAINTAINER Samuel von Baussnern <samuel.vonbaussnern@gmail.com>
 
 RUN apk update && apk add python3 python3-dev openssh-client supervisor make git
 # RUN apk install bash tree # for debugging
-RUN pip3 install sphinx
+RUN pip3 install sphinx sphinx_rtd_theme
 
 RUN touch /supervisord.log
 RUN chmod 666 /supervisord.log
