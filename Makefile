@@ -5,7 +5,7 @@ GIT_REPO="git@bitbucket.org:contovista/compendium.git"
 HTML_DIRECTORY="build/html"
 CONTENT_DIRECTORY="doc"
 
-HOSTPORT=8000
+HOSTPORT=9999
 
 .PHONY: build-image
 build-image:

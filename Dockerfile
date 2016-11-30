@@ -3,7 +3,7 @@ FROM alpine:latest
 MAINTAINER Samuel von Baussnern <samuel.vonbaussnern@gmail.com>
 
 RUN apk update && apk add python3 python3-dev openssh-client supervisor make git
-# RUN apk install bash tree # for debugging
+RUN apk add bash tree 
 RUN pip3 install sphinx sphinx_rtd_theme
 
 RUN touch /supervisord.log
@@ -20,4 +20,3 @@ ENV SPHINX_PORT 8000
 EXPOSE 8000
 
 CMD ["/app/run.sh"]
-

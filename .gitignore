@@ -39,3 +39,6 @@ Thumbs.db
 # Editor backup files #
 #######################
 *~
+
+git_repo_key/*
+!git_repo_key/.gitkeep
